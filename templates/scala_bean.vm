@@ -29,7 +29,7 @@ class $beanClass.name extends Serializable
 #end
      */
 	@BeanProperty
-    var $field.formatedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end // Primary Key
+    var $field.formattedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end // Primary Key
     
 #end
 
@@ -40,7 +40,7 @@ class $beanClass.name extends Serializable
 #end
      */
 	@BeanProperty
-    var $field.formatedName(12):#if($field.type=="int")Int #else $field.type #end  #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end
+    var $field.formattedName(12):#if($field.type=="int")Int #else $field.type #end  #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end
     
 #end
 

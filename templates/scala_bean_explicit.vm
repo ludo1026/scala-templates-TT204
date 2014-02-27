@@ -23,11 +23,11 @@ class $beanClass.name extends Serializable
     private val serialVersionUID = 1L
 
 #foreach( $field in $beanClass.keyAttributes )
-    private var $field.formatedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end // Primary Key
+    private var $field.formattedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end // Primary Key
 #end
 
 #foreach( $field in $beanClass.nonKeyAttributes )
-    private var $field.formatedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end
+    private var $field.formattedName(12):#if($field.type=="int")Int #else $field.type #end #if($field.hasInitialValue()) = ${field.initialValue} #else =_  #end
     
 #end
 
